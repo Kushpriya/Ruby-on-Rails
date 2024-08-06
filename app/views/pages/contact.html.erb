@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <%= stylesheet_link_tag("contact") %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" />
+</head>
+<body>
+    <div class="form-container">
+    <h1>Contact Us </h1>
+        <form>
+            <div class="row mb-4">
+                <div class="col">
+                    <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form6Example1" class="form-control" />
+                        <label class="form-label" for="form6Example1">First name</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="form6Example2" class="form-control" />
+                        <label class="form-label" for="form6Example2">Last name</label>
+                    </div>
+                </div>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="text" id="form6Example3" class="form-control" />
+                <label class="form-label" for="form6Example3">Company name</label>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="text" id="form6Example4" class="form-control" />
+                <label class="form-label" for="form6Example4">Address</label>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="form6Example5" class="form-control" />
+                <label class="form-label" for="form6Example5">Email</label>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="number" id="form6Example6" class="form-control" />
+                <label class="form-label" for="form6Example6">Phone</label>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+                <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                <label class="form-label" for="form6Example7">Additional information</label>
+            </div>
+
+            <div class="form-check d-flex justify-content-center mb-4">
+                <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value=""
+                    id="form6Example8"
+                    checked
+                />
+                <label class="form-check-label" for="form6Example8"> Create an account? </label>
+            </div>
+
+            <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Send</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+    <script>
+        import { Input, Ripple, initMDB } from "mdb-ui-kit";
+
+        initMDB({ Input, Ripple });
+    </script>
+</body>
+</html>
