@@ -35,6 +35,7 @@ border-radius: 6px; padding: 15px; box-shadow: 0px 0px 2px 2px (255,255,255,0.1)
       <%= post.errors.full_messages_for(:keywords).join(",") %>
       </p>
       <% end %>
+      <%= form.file_field :images , multiple:true %>
   </div>
 
   <div style="margin: 10px auto; width:200px; ">
