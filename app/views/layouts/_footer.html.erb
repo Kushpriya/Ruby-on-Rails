@@ -4,67 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer Example</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" />
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-        }
-        .content {
-            flex: 1;
-            back
-        }
-        footer {
-            background-color: rgba(0, 0, 0, 0.05);
-        }
-    </style>
+    <%= stylesheet_link_tag("footer") %>
+
 </head>
 <body>
-
     <div class="content">
+        <!-- Main content goes here -->
     </div>
 
-    <footer class="bg-body-tertiary text-center">
-        <div class="container footer-container p-4 pb-0">
-            <section>
+    <footer>
+        <div class="footer-container">
+            <section class="newsletter-section">
                 <form action="">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-auto">
-                            <p class="pt-2">
-                                <strong>Sign up for our newsletter</strong>
-                            </p>
-                        </div>
-
-                        <div class="col-md-5 col-12">
-                            <div data-mdb-input-init class="form-outline mb-4">
-                                <input type="email" id="form5Example26" class="form-control" />
-                                <label class="form-label" for="form5Example26">Email address</label>
-                            </div>
-                        </div>
-
-                        <div class="col-auto">
-                            <button data-mdb-ripple-init type="submit" class="btn btn-primary mb-4">
-                                Subscribe
-                            </button>
+                    <div class="newsletter-form">
+                        <p class="newsletter-heading">
+                            <strong>Sign up for our newsletter</strong>
+                        </p>
+                        <div class="newsletter-input-group">
+                            <input type="email" id="email" class="form-input" placeholder="Email address" />
+                            <button type="submit" class="btn-submit">Subscribe</button>
                         </div>
                     </div>
                 </form>
             </section>
-        </div>
 
-        <div class="text-center p-3">
-            © 2020 Copyright:
-            <a class="text-body" href="https://gorails.com/">RubyOnRails.com</a>
+            <div class="footer-bottom">
+                © 2020 Copyright:
+                <a class="footer-link" href="https://gorails.com/">RubyOnRails.com</a>
+            </div>
         </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
-    <script>
-        import { Input, initMDB } from "mdb-ui-kit";
-
-        initMDB({ Input });
-    </script>
 </body>
 </html>
